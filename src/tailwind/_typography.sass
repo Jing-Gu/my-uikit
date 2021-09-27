@@ -1,0 +1,59 @@
+// display1 = 72px
+// display2 = 60px
+// h1 = 48px or sm 36px
+// h2 = 36px or sm 24px
+// h3 = 24px or sm 20px
+// h4 = 20px or sm 18px
+// h5 = 18px or sm 16px
+// p = 16px or sm 14px
+// caption = 12px
+
+
+h1
+  @apply font-montserrat text-5xl font-bold mb-4
+  &.sm
+    @apply text-4xl
+  &.semibold
+    @apply font-semibold
+  &.display1
+    @apply text-7xl
+  &.display2
+    @apply text-6xl
+
+h2
+  @apply font-montserrat text-4xl font-bold mb-4
+  &.sm
+    @apply text-2xl
+  &.semibold
+    @apply font-semibold
+
+h3
+  @apply font-montserrat text-2xl font-bold mb-4
+  &.sm
+    @apply text-xl
+  &.semibold
+    @apply font-semibold
+
+h4
+  @apply font-montserrat text-xl font-bold mb-3
+  &.sm
+    @apply text-lg
+  &.semibold
+    @apply font-semibold
+
+// h5 is subtitle
+h5
+  @apply font-montserrat text-lg font-bold mb-2
+  &.sm
+    @apply text-base
+  &.semibold
+    @apply font-semibold
+
+p
+  @apply font-poppins text-base
+  &.sm
+    @apply text-sm
+  &.semibold
+    @apply font-semibold
+  &.caption
+    @apply text-xs

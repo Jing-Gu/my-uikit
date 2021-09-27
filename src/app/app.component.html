@@ -1,6 +1,6 @@
 
 <div class='flex'>
-  <ul class='side-menu w-1/5 border-r-2 p-4 min-h-screen'>
+  <ul class='side-menu w-72 border-r-2 p-4 h-screen overflow-auto fixed bg-neutral-100'>
    <!--  category title Atoms... -->
   <!--  component intro, will be the homepage showing, or clicking logo, bring it here too -->
     <li routerLinkActive='active'>
@@ -11,7 +11,7 @@
     </li>
   </ul>
 
-  <div class='contents-wrapper w-4/5 p-4'>
+  <div class='contents-wrapper p-4 ml-72'>
     <router-outlet></router-outlet>
   </div>
 </div>

@@ -3,7 +3,8 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     fontFamily: {
-      sans: ['Poppins', 'Montserrat', 'Roboto', 'sans-serif']
+      poppins: ['Poppins', 'Roboto', 'sans-serif'],
+      montserrat: ['Montserrat', 'Roboto', 'sans-serif']
     },
     extend: {
       colors: {
