@@ -5,12 +5,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ColorsComponent } from './components/colors/colors.component';
 import { TypographyComponent } from './components/typography/typography.component';
+import { DropShadowComponent } from './components/drop-shadow/drop-shadow.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ColorsComponent,
-    TypographyComponent
+    TypographyComponent,
+    DropShadowComponent
   ],
   imports: [
     BrowserModule,
