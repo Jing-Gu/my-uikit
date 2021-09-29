@@ -1,6 +1,6 @@
 
-<div class='flex'>
-  <ul class='side-menu w-72 border-r-2 p-4 h-screen overflow-auto fixed bg-neutral-100'>
+<div class='sidebar-layout'>
+  <ul class='side-menu border-r-2 p-4 overflow-y-auto bg-neutral-100'>
    <!--  category title Atoms... -->
   <!--  component intro, will be the homepage showing, or clicking logo, bring it here too -->
     <h4 border-b-2 border-neutral-500 text-neutral-500 pb-2>Atoms</h4>
@@ -14,9 +14,10 @@
       <a routerLink='/drop-shadow'>Drop shadows</a>
     </li>
     <h4 border-b-2 border-neutral-500 text-neutral-500 pb-2>Molecules</h4>
+
   </ul>
 
-  <div class='contents-wrapper p-4 ml-72'>
+  <div class='contents-wrapper p-4 overflow-y-auto'>
     <router-outlet></router-outlet>
   </div>
 </div>
