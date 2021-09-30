@@ -51,6 +51,9 @@ module.exports = {
           900: 'var(--dark-900)',
 
         }
+      },
+      gridTemplateColumns: {
+        'style1': '300px auto'
       }
     },
   },
