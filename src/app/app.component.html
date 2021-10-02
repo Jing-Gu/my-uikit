@@ -1,9 +1,9 @@
 
 <div class='sidebar-layout'>
-  <ul class='side-menu border-r-2 p-4 overflow-y-auto bg-neutral-100'>
+  <ul id='sidemenu'  class='border-r-2 p-4 overflow-y-auto'>
    <!--  category title Atoms... -->
   <!--  component intro, will be the homepage showing, or clicking logo, bring it here too -->
-    <h4 border-b-2 border-neutral-500 text-neutral-500 pb-2>Atoms</h4>
+    <h4 pb-2>Atoms</h4>
     <li routerLinkActive='active' class='mb-4'>
       <a routerLink='/colors'>Colors</a>
     </li>
@@ -16,11 +16,19 @@
     <li routerLinkActive='active' class='mb-4'>
       <a routerLink='/drop-shadow'>Drop shadows</a>
     </li>
-    <h4 border-b-2 border-neutral-500 text-neutral-500 pb-2>Molecules</h4>
+    <h4 pb-2>Molecules</h4>
 
   </ul>
 
-  <div class='contents-wrapper p-4 overflow-y-auto'>
+  <div id='contents'  class='p-4 overflow-y-auto'>
+    <div class='flex justify-between'>
+      <p>page header</p>
+      <button #darkModeToggle class='w-10 h-10 p-2 bg-neutral-300 rounded-full dark:bg-neutral-500'
+        (click)='toggleDarkMode()'>
+        <i-feather *ngIf='!darkMode' name="moon"></i-feather>
+        <i-feather *ngIf='darkMode' class='text-neutral-100' name="sun"></i-feather>
+      </button>
+    </div>
     <router-outlet></router-outlet>
   </div>
 </div>
