@@ -36,20 +36,26 @@ module.exports = {
           700: 'var(--red-700)',
           900: 'var(--red-900)'
         },
+        coolgrey: {
+          100: 'var(--coolgrey-100)',
+          300: 'var(--coolgrey-300)',
+          500: 'var(--coolgrey-500)',
+          700: 'var(--coolgrey-700)',
+          900: 'var(--coolgrey-900)',
+        },
+        warmgrey: {
+          100: 'var(--warmgrey-100)',
+          300: 'var(--warmgrey-300)',
+          500: 'var(--warmgrey-500)',
+          700: 'var(--warmgrey-700)',
+          900: 'var(--warmgrey-900)',
+        },
         neutral : {
           100: 'var(--neutral-100)',
           300: 'var(--neutral-300)',
           500: 'var(--neutral-500)',
           700: 'var(--neutral-700)',
           900: 'var(--neutral-900)',
-        },
-        shadow: {
-          100: 'var(--light-100)',
-          300: 'var(--light-300)',
-          500: 'var(--dark-500)',
-          700: 'var(--dark-700)',
-          900: 'var(--dark-900)',
-
         }
       },
       gridTemplateColumns: {
