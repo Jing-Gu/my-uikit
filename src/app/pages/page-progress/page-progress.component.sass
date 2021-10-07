@@ -1,0 +1,59 @@
+
+.bg
+  fill: none
+  stroke-width: 10px
+  .blue-circle &
+    stroke: var(--blue-900)
+  .yellow-circle &
+    stroke: var(--yellow-900)
+  .green-circle &
+    stroke: var(--green-900)
+
+.progress
+  fill: none
+  stroke-width: 10px
+  stroke-linecap: round
+  stroke-dasharray: 52*2*3.14
+  transform: rotate(-90deg)
+  transform-origin: center
+  .blue-circle &
+    stroke: var(--blue-500)
+    stroke-dashoffset: 120
+    animation: move1 1500ms ease-out
+  .yellow-circle &
+    stroke: var(--yellow-500)
+    stroke-dashoffset: 60
+    animation: move2 1500ms ease-out
+  .green-circle &
+    stroke: var(--green-500)
+    stroke-dashoffset: 240
+    animation: move3 1500ms ease-out
+
+
+@keyframes move1
+  0%
+    stroke-dashoffset: 52*2*3.14
+  100%
+    stroke-dashoffset: 120
+@keyframes move2
+  0%
+    stroke-dashoffset: 52*2*3.14
+  100%
+    stroke-dashoffset: 60
+@keyframes move3
+  0%
+    stroke-dashoffset: 52*2*3.14
+  100%
+    stroke-dashoffset: 240
+
+.linear-progress
+  .progress, .progress-bar
+    height: 20px
+    border-radius: 50px
+    transform: none
+  .progress
+    width:100%
+    background: var(--neutral-100)
+  .progress-bar
+    width: 65%
+    background: var(--blue-500)

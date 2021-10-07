@@ -12,6 +12,7 @@ import { PageIntroComponent } from './pages/page-intro/page-intro.component';
 import { PageAlertsComponent } from './pages/page-alerts/alerts.component';
 import { PageButtonsComponent } from './pages/page-buttons/buttons.component';
 import { PageAvatarsComponent } from './pages/page-avatars/page-avatars.component';
+import { PageProgressComponent } from './pages/page-progress/page-progress.component';
 
 @NgModule({
   declarations: [
@@ -24,6 +25,7 @@ import { PageAvatarsComponent } from './pages/page-avatars/page-avatars.componen
     PageAlertsComponent,
     PageButtonsComponent,
     PageAvatarsComponent,
+    PageProgressComponent,
   ],
   imports: [
     BrowserModule,

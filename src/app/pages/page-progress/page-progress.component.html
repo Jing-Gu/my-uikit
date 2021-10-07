@@ -1,0 +1,64 @@
+<header class='border-l-8 border-carblue-500 text-carblue-500 -ml-4 p-4 mb-8'>
+  <h3 class='text-carblue-500'>Progress</h3>
+  <p class='text-carblue-700 dark:text-carblue-300'>To display the status of a given process</p>
+</header>
+
+<main>
+  <p>Here are 3 different ways to describe a progress, as a circular or semicircular gauge, or a linear bar</p>
+
+  <div class='circular-gauge mb-8'>
+    <h4>Circular gauge</h4>
+    <div class='flex flex-col lg:flex-row'>
+      <div class='relative blue-circle mr-12'>
+        <div class='absolute left-1/2 top-1/3 transform -translate-x-1/2 text-center'>
+          <p class='text-2xl text-carblue-500'>2789</p>
+          <p class='text-sm text-neutral-300'>kcal</p>
+        </div>
+        <svg style="height: 114px; width: 114px" class='rounded-full border-carblue-900'>
+          <circle class="bg" cx="57" cy="57" r="52"/>
+          <circle class="progress" cx="57" cy="57" r="52"/>
+        </svg>
+      </div>
+      <div class='relative yellow-circle mr-12'>
+        <div class='absolute left-1/2 top-1/3 transform -translate-x-1/2 text-center'>
+          <p class='text-2xl text-caryellow-500'>3024</p>
+          <p class='text-sm text-neutral-300'>kcal</p>
+        </div>
+        <svg style="height: 114px; width: 114px" class='rounded-full border-caryellow-900'>
+          <circle class="bg" cx="57" cy="57" r="52"/>
+          <circle class="progress" cx="57" cy="57" r="52"/>
+        </svg>
+      </div>
+      <div class='relative green-circle mr-12'>
+        <div class='absolute left-1/2 top-1/3 transform -translate-x-1/2 text-center'>
+          <p class='text-2xl text-success-500'>986</p>
+          <p class='text-sm text-neutral-300'>kcal</p>
+        </div>
+        <svg style="height: 114px; width: 114px" class='rounded-full border-success-900'>
+          <circle class="bg" cx="57" cy="57" r="52"/>
+          <circle class="progress" cx="57" cy="57" r="52"/>
+        </svg>
+      </div>
+    </div>
+  </div>
+
+  <div class='mb-8'>
+    <h4>semicircular gauge</h4>
+  </div>
+
+  <div class='linear-progress mb-8'>
+    <h4>Progress bar</h4>
+    <p>A progress bar shows the completion status of an ongoing task.
+      Use a progress bar when you can determine the percentage of the completed task at any time,
+      such as uploading files or upgrading an application.
+    </p>
+    <div class='progress'>
+      <div class='progress-bar'></div>
+    </div>
+
+
+  </div>
+</main>
+
+
+

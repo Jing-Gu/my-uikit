@@ -8,6 +8,7 @@ import { IconsComponent } from './pages/icons/icons.component'
 import { PageIntroComponent } from './pages/page-intro/page-intro.component'
 import { TypographyComponent } from './pages/typography/typography.component'
 import { PageAvatarsComponent } from './pages/page-avatars/page-avatars.component'
+import { PageProgressComponent } from './pages/page-progress/page-progress.component'
 
 const routes: Routes = [
   { path: 'uikit', component: PageIntroComponent },
@@ -18,6 +19,7 @@ const routes: Routes = [
   { path:'avatars', component: PageAvatarsComponent },
   { path: 'alerts', component: PageAlertsComponent },
   { path: 'buttons', component: PageButtonsComponent },
+  { path: 'progress', component: PageProgressComponent },
   { path: '', redirectTo: 'uikit', pathMatch: 'full' },
   { path: '**', redirectTo: 'uikit' }
 ]
