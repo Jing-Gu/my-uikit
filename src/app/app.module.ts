@@ -8,7 +8,9 @@ import { ColorsComponent } from './components/colors/colors.component'
 import { TypographyComponent } from './components/typography/typography.component'
 import { DropShadowComponent } from './components/drop-shadow/drop-shadow.component';
 import { IconsComponent } from './components/icons/icons.component';
-import { PageIntroComponent } from './components/page-intro/page-intro.component'
+import { PageIntroComponent } from './components/page-intro/page-intro.component';
+import { AlertsComponent } from './components/alerts/alerts.component';
+import { ButtonsComponent } from './components/buttons/buttons.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +19,9 @@ import { PageIntroComponent } from './components/page-intro/page-intro.component
     TypographyComponent,
     DropShadowComponent,
     IconsComponent,
-    PageIntroComponent
+    PageIntroComponent,
+    AlertsComponent,
+    ButtonsComponent,
   ],
   imports: [
     BrowserModule,

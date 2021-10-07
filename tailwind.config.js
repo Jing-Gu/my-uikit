@@ -64,7 +64,12 @@ module.exports = {
     },
   },
   variants: {
-    extend: {},
+    extend: {
+      opacity: ['disabled'],
+      backgroundOpacity: ['disabled'],
+      backgroundColor: ['disabled'],
+      cursor: ['disabled'],
+    },
   },
   plugins: [],
 }

@@ -1,0 +1,70 @@
+.alert
+  @apply flex items-center rounded-sm border-l-4 p-4
+  &.alert-info
+    @apply bg-carblue-100 border-carblue-500
+    i-feather
+      @apply text-carblue-500
+    .title
+      @apply text-carblue-900
+    .content
+      @apply text-carblue-700
+    a
+      @apply text-carblue-700
+    button
+      @apply text-carblue-500 border-carblue-500
+  &.alert-warning
+    @apply bg-caryellow-100 border-caryellow-500
+    i-feather
+      @apply text-caryellow-500
+    .title
+      @apply text-caryellow-900
+    .content
+      @apply text-caryellow-700
+    a
+      @apply text-caryellow-700
+    button
+      @apply text-caryellow-700 border-caryellow-700
+  &.alert-success
+    @apply bg-success-100 border-success-500
+    i-feather
+      @apply text-success-500
+    .title
+      @apply text-success-900
+    .content
+      @apply text-success-700
+    a
+      @apply text-success-700
+    button
+      @apply text-success-700 border-success-700
+  &.alert-error
+    @apply bg-error-100 border-error-500
+    i-feather
+      @apply text-error-500
+    .title
+      @apply text-error-900
+    .content
+      @apply text-error-700
+    a
+      @apply text-error-700
+    button
+      @apply text-error-700 border-error-700
+  & > div:first-child
+    @apply grid place-items-center
+  i-feather
+    @apply mr-4
+  .title
+    @apply text-sm font-bold
+  .content
+    @apply text-xs
+  .action-line
+    @apply flex flex-col lg:flex-row items-start lg:items-center lg:justify-between w-full
+    .title
+      @apply mb-2 lg:mb-0
+    .actions
+      button:nth-last-of-type(1)
+        @apply ml-8
+  a
+    @apply underline text-xs
+  button
+    @apply text-sm
+

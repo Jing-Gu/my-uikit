@@ -1,0 +1,17 @@
+.btn
+  @apply flex rounded-md py-2 px-4 transition duration-300 focus:ring-4
+  @apply disabled:bg-neutral-100 disabled:cursor-not-allowed
+  &-sm
+    @apply text-sm py-2 px-3
+  &-primary-blue:not(.is-disabled)
+    @apply bg-carblue-500 text-carblue-900 hover:bg-carblue-700 hover:text-carblue-500 focus:bg-carblue-700 focus:ring-carblue-300
+  &-primary-yellow:not(.is-disabled)
+    @apply bg-caryellow-500 text-caryellow-900 hover:bg-caryellow-700 hover:text-caryellow-500 focus:bg-caryellow-700 focus:ring-caryellow-300
+  &-sec-blue:not(.is-disabled)
+    @apply border-2 border-carblue-500 text-carblue-500 hover:bg-carblue-500 hover:text-white
+  &-sec-yellow:not(.is-disabled)
+    @apply border-2 border-caryellow-500 text-caryellow-500 hover:bg-caryellow-500 hover:text-white
+  &.is-disabled
+    @apply text-neutral-300
+  i-feather
+    @apply ml-4
