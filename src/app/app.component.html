@@ -1,8 +1,7 @@
 
 <div class='sidebar-layout'>
   <ul id='sidemenu'  class='border-r-2 p-4 overflow-y-auto'>
-   <!--  category title Atoms... -->
-  <!--  component intro, will be the homepage showing, or clicking logo, bring it here too -->
+    <div class='p-4 border-2 border-coolgrey-500 mb-12'>LOGO</div>
     <h4 pb-2>Atoms</h4>
     <li routerLinkActive='active' class='mb-4'>
       <a routerLink='/colors'>Color scheme</a>
@@ -32,17 +31,25 @@
 
   </ul>
 
+
   <div id='contents'  class='p-4 overflow-y-auto'>
-    <div class='flex justify-between'>
-      <p>page header</p>
-      <button #darkModeToggle class='w-10 h-10 p-2 bg-neutral-300 rounded-full dark:bg-neutral-500'
-        (click)='toggleDarkMode()'>
-        <i-feather *ngIf='!darkMode' name="moon"></i-feather>
-        <i-feather *ngIf='darkMode' class='text-neutral-100' name="sun"></i-feather>
-      </button>
+    <div class='flex'>
+      <div class='ml-auto'>
+        <button #darkModeToggle class='w-10 h-10 p-2 self-end bg-neutral-300 rounded-full dark:bg-neutral-500'
+          (click)='toggleDarkMode()'>
+          <i-feather *ngIf='!darkMode' class='text-carblue-900' name="moon"></i-feather>
+          <i-feather *ngIf='darkMode' class='text-caryellow-300' name="sun"></i-feather>
+        </button>
+      </div>
     </div>
     <router-outlet></router-outlet>
+    <footer class='py-2 text-xs -mb-4 text-coolgrey-300 text-center border-t border-coolgrey-100
+      dark:text-coolgrey-700 dark:border-coolgrey-700'>
+      2021
+    </footer>
   </div>
+
+
 </div>
 
 
