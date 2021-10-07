@@ -1,12 +1,13 @@
 import { NgModule } from '@angular/core'
 import { RouterModule, Routes } from '@angular/router'
-import { AlertsComponent } from './components/alerts/alerts.component'
-import { ButtonsComponent } from './components/buttons/buttons.component'
-import { ColorsComponent } from './components/colors/colors.component'
-import { DropShadowComponent } from './components/drop-shadow/drop-shadow.component'
-import { IconsComponent } from './components/icons/icons.component'
-import { PageIntroComponent } from './components/page-intro/page-intro.component'
-import { TypographyComponent } from './components/typography/typography.component'
+import { PageAlertsComponent } from './pages/page-alerts/alerts.component'
+import { PageButtonsComponent } from './pages/page-buttons/buttons.component'
+import { ColorsComponent } from './pages/colors/colors.component'
+import { DropShadowComponent } from './pages/drop-shadow/drop-shadow.component'
+import { IconsComponent } from './pages/icons/icons.component'
+import { PageIntroComponent } from './pages/page-intro/page-intro.component'
+import { TypographyComponent } from './pages/typography/typography.component'
+import { PageAvatarsComponent } from './pages/page-avatars/page-avatars.component'
 
 const routes: Routes = [
   { path: 'uikit', component: PageIntroComponent },
@@ -14,8 +15,9 @@ const routes: Routes = [
   { path: 'typography', component: TypographyComponent },
   { path:'icons', component: IconsComponent },
   { path: 'drop-shadow', component: DropShadowComponent },
-  { path: 'alerts', component: AlertsComponent },
-  { path: 'buttons', component: ButtonsComponent },
+  { path:'avatars', component: PageAvatarsComponent },
+  { path: 'alerts', component: PageAlertsComponent },
+  { path: 'buttons', component: PageButtonsComponent },
   { path: '', redirectTo: 'uikit', pathMatch: 'full' },
   { path: '**', redirectTo: 'uikit' }
 ]

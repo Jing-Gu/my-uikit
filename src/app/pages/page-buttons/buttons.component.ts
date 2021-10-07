@@ -1,11 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-buttons',
+  selector: 'page-buttons',
   templateUrl: './buttons.component.html',
   styleUrls: ['./buttons.component.sass']
 })
-export class ButtonsComponent implements OnInit {
+export class PageButtonsComponent implements OnInit {
 
   constructor() { }
 

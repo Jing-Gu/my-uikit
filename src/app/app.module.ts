@@ -4,13 +4,14 @@ import { FeatherIconsModule } from './feather-icons/feather-icons.module'
 
 import { AppRoutingModule } from './app-routing.module'
 import { AppComponent } from './app.component'
-import { ColorsComponent } from './components/colors/colors.component'
-import { TypographyComponent } from './components/typography/typography.component'
-import { DropShadowComponent } from './components/drop-shadow/drop-shadow.component';
-import { IconsComponent } from './components/icons/icons.component';
-import { PageIntroComponent } from './components/page-intro/page-intro.component';
-import { AlertsComponent } from './components/alerts/alerts.component';
-import { ButtonsComponent } from './components/buttons/buttons.component';
+import { ColorsComponent } from './pages/colors/colors.component'
+import { TypographyComponent } from './pages/typography/typography.component'
+import { DropShadowComponent } from './pages/drop-shadow/drop-shadow.component';
+import { IconsComponent } from './pages/icons/icons.component';
+import { PageIntroComponent } from './pages/page-intro/page-intro.component';
+import { PageAlertsComponent } from './pages/page-alerts/alerts.component';
+import { PageButtonsComponent } from './pages/page-buttons/buttons.component';
+import { PageAvatarsComponent } from './pages/page-avatars/page-avatars.component';
 
 @NgModule({
   declarations: [
@@ -20,8 +21,9 @@ import { ButtonsComponent } from './components/buttons/buttons.component';
     DropShadowComponent,
     IconsComponent,
     PageIntroComponent,
-    AlertsComponent,
-    ButtonsComponent,
+    PageAlertsComponent,
+    PageButtonsComponent,
+    PageAvatarsComponent,
   ],
   imports: [
     BrowserModule,

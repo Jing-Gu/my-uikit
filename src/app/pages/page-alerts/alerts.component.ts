@@ -1,11 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-alerts',
+  selector: 'page-alerts',
   templateUrl: './alerts.component.html',
   styleUrls: ['./alerts.component.sass']
 })
-export class AlertsComponent implements OnInit {
+export class PageAlertsComponent implements OnInit {
 
   constructor() { }
 
