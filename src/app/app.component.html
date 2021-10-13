@@ -1,7 +1,9 @@
 
 <div class='sidebar-layout'>
   <ul id='sidemenu'  class='border-r-2 p-4 overflow-y-auto'>
-    <div class='p-4 border-2 border-coolgrey-500 mb-12'>LOGO</div>
+    <div class='p-4 border-2 border-coolgrey-500 mb-12'>
+      <a routerLink='/uikit'>LOGO</a>
+    </div>
     <h4 pb-2>Atoms</h4>
     <li routerLinkActive='active' class='mb-4'>
       <a routerLink='/colors'>Color scheme</a>
@@ -23,16 +25,22 @@
       <a routerLink='/alerts'>Alerts / Banners</a>
     </li>
     <li routerLinkActive='active' class='mb-4'>
+      <a routerLink='/accordians'>Accordians</a>
+    </li>
+    <li routerLinkActive='active' class='mb-4'>
       <a routerLink='/buttons'>Buttons</a>
     </li>
     <li routerLinkActive='active' class='mb-4'>
       <a routerLink='/progress'>Progress</a>
     </li>
+    <li routerLinkActive='active' class='mb-4'>
+      <a routerLink='/spinners'>Spinners</a>
+    </li>
 
   </ul>
 
 
-  <div id='contents'  class='p-4 overflow-y-auto'>
+  <div id='contents'  class='p-4 overflow-y-auto flex flex-col min-h-screen'>
     <div class='flex'>
       <div class='ml-auto'>
         <button #darkModeToggle class='w-10 h-10 p-2 self-end bg-neutral-300 rounded-full dark:bg-neutral-500'
@@ -43,7 +51,7 @@
       </div>
     </div>
     <router-outlet></router-outlet>
-    <footer class='py-2 text-xs -mb-4 text-coolgrey-300 text-center border-t border-coolgrey-100
+    <footer class='py-2 text-xs -mb-4 mt-auto text-coolgrey-300 text-center border-t border-coolgrey-100
       dark:text-coolgrey-700 dark:border-coolgrey-700'>
       2021
     </footer>

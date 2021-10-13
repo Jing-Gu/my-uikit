@@ -1,63 +1,97 @@
 <header class='border-l-8 border-carblue-500 text-carblue-500 -ml-4 p-4 mb-8'>
   <h3 class='text-carblue-500'>Progress</h3>
-  <p class='text-carblue-700 dark:text-carblue-300'>To display the status of a given process</p>
+  <p class='text-carblue-700 dark:text-carblue-300'>To display the status of a given process with a linear bar or a gauge</p>
 </header>
 
 <main>
-  <p>Here are 3 different ways to describe a progress, as a circular or semicircular gauge, or a linear bar</p>
-
-  <div class='circular-gauge mb-8'>
-    <h4>Circular gauge</h4>
-    <div class='flex flex-col lg:flex-row'>
-      <div class='relative blue-circle mr-12'>
-        <div class='absolute left-1/2 top-1/3 transform -translate-x-1/2 text-center'>
-          <p class='text-2xl text-carblue-500'>2789</p>
-          <p class='text-sm text-neutral-300'>kcal</p>
-        </div>
-        <svg style="height: 114px; width: 114px" class='rounded-full border-carblue-900'>
-          <circle class="bg" cx="57" cy="57" r="52"/>
-          <circle class="progress" cx="57" cy="57" r="52"/>
-        </svg>
-      </div>
-      <div class='relative yellow-circle mr-12'>
-        <div class='absolute left-1/2 top-1/3 transform -translate-x-1/2 text-center'>
-          <p class='text-2xl text-caryellow-500'>3024</p>
-          <p class='text-sm text-neutral-300'>kcal</p>
-        </div>
-        <svg style="height: 114px; width: 114px" class='rounded-full border-caryellow-900'>
-          <circle class="bg" cx="57" cy="57" r="52"/>
-          <circle class="progress" cx="57" cy="57" r="52"/>
-        </svg>
-      </div>
-      <div class='relative green-circle mr-12'>
-        <div class='absolute left-1/2 top-1/3 transform -translate-x-1/2 text-center'>
-          <p class='text-2xl text-success-500'>986</p>
-          <p class='text-sm text-neutral-300'>kcal</p>
-        </div>
-        <svg style="height: 114px; width: 114px" class='rounded-full border-success-900'>
-          <circle class="bg" cx="57" cy="57" r="52"/>
-          <circle class="progress" cx="57" cy="57" r="52"/>
-        </svg>
-      </div>
-    </div>
-  </div>
-
-  <div class='mb-8'>
-    <h4>semicircular gauge</h4>
-  </div>
-
   <div class='linear-progress mb-8'>
     <h4>Progress bar</h4>
     <p>A progress bar shows the completion status of an ongoing task.
       Use a progress bar when you can determine the percentage of the completed task at any time,
       such as uploading files or upgrading an application.
     </p>
-    <div class='progress'>
-      <div class='progress-bar'></div>
+    <div class='my-8'>
+      <p>Default progress bar</p>
+      <div class='progress h-4 w-full rounded-full bg-coolgrey-100 dark:bg-coolgrey-700'>
+        <div class='progress-bar h-4 rounded-full bg-carblue-500 relative' style="width: 65%;">
+          <span class='absolute left-1/2 transform -translate-x-1/2 text-xs text-white'>65%</span>
+        </div>
+      </div>
+      <p>Others</p>
+      <div class='progress h-4 w-full rounded-full bg-coolgrey-100 dark:bg-coolgrey-700'>
+        <div class='progress-bar h-4 rounded-full bg-caryellow-500 relative' style="width: 35%;">
+          <span class='absolute left-1/2 transform -translate-x-1/2 text-xs text-neutral-900'>35%</span>
+        </div>
+      </div>
     </div>
+  </div>
+
+  <hr>
+
+  <p>Imported from <a class='inline-link' href='https://github.com/ashish-chopra/ngx-gauge' target='_blank'>ngx-gauge</a>,
+    there are 3 types of gauges to create: full circle, semi circle or arch.</p>
+
+  <div class='circular-gauge mb-8'>
+    <h4>Circular gauge</h4>
+    <div class='grid grid-cols-1 lg:grid-cols-3 gap-4'>
+      <ngx-gauge type='full' cap='round' size='200' thick='10' [value]='fullcircle1.value' [max]='fullcircle1.max'
+      [foregroundColor]='fullcircle1.foregoundColor' [backgroundColor]='fullcircle1.backgroundColor'>
+      <ngx-gauge-value class='text-carblue-500'>
+        {{fullcircle1.value}}
+      </ngx-gauge-value>
+      <ngx-gauge-append class='text-carblue-900 dark:text-carblue-700'>
+        / {{fullcircle1.max}}
+      </ngx-gauge-append>
+      <ngx-gauge-label>
+       {{ fullcircle1.label }}
+      </ngx-gauge-label>
+    </ngx-gauge>
+
+    <ngx-gauge type='full' cap='round' size='200' thick='10' [value]='fullcircle2.value' [max]='fullcircle2.max'
+      [foregroundColor]='fullcircle2.foregoundColor' [backgroundColor]='fullcircle2.backgroundColor' append='%'>
+      <ngx-gauge-value class='text-caryellow-500'>
+        {{fullcircle2.value}}
+      </ngx-gauge-value>
+      <ngx-gauge-label>
+       {{ fullcircle2.label }}
+      </ngx-gauge-label>
+    </ngx-gauge>
+
+    <ngx-gauge type='full' cap='round' size='200' thick='10' [value]='fullcircle3.value' [max]='fullcircle3.max'
+      [foregroundColor]='fullcircle3.foregoundColor' [backgroundColor]='fullcircle3.backgroundColor'>
+      <ngx-gauge-value class='text-success-500'>
+        {{fullcircle3.value}}
+      </ngx-gauge-value>
+      <ngx-gauge-label>
+       {{ fullcircle3.label }}
+      </ngx-gauge-label>
+    </ngx-gauge>
+    </div>
+
+  </div>
+
+  <div class='semi-gauge mb-8'>
+    <h4>Semicircular gauge</h4>
+    <ngx-gauge type='semi' cap='round' size='240' thick="10" foregroundColor='#00ACDE'
+      value='58.3' label='Speed' append='km/hr'>
+    </ngx-gauge>
+
 
 
   </div>
+
+  <div class='arch-gauge mb-8'>
+    <h4>Arch gauge</h4>
+    <p>You can customize the colors of the gauge based on the current value being shown. This is defined
+      by property [thresholds], the color changes when the data crossess certain threshold.
+    </p>
+    <ngx-gauge type='arch' cap='round' thick='10' value='9' append='Mbps' label='Internet speed' [thresholds]='thresholdConfig'></ngx-gauge>
+    <ngx-gauge type='arch' cap='round' thick='10' value='35' append='Mbps' label='Internet speed' [thresholds]='thresholdConfig'></ngx-gauge>
+    <ngx-gauge type='arch' cap='round' thick='10' value='63' append='Mbps' label='Internet speed' [thresholds]='thresholdConfig'></ngx-gauge>
+    <ngx-gauge type='arch' cap='round' thick='10' value='71' append='Mbps' label='Internet speed' [thresholds]='thresholdConfig'></ngx-gauge>
+  </div>
+
+
 </main>
 
 

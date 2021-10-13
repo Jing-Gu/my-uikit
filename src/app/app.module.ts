@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
-import { FeatherIconsModule } from './feather-icons/feather-icons.module'
+import { SharedModule } from './shared/shared.module'
 
 import { AppRoutingModule } from './app-routing.module'
 import { AppComponent } from './app.component'
@@ -13,6 +13,8 @@ import { PageAlertsComponent } from './pages/page-alerts/alerts.component';
 import { PageButtonsComponent } from './pages/page-buttons/buttons.component';
 import { PageAvatarsComponent } from './pages/page-avatars/page-avatars.component';
 import { PageProgressComponent } from './pages/page-progress/page-progress.component';
+import { PageSpinnersComponent } from './pages/page-spinners/page-spinners.component';
+import { PageAccordiansComponent } from './pages/page-accordians/page-accordians.component';
 
 @NgModule({
   declarations: [
@@ -26,11 +28,13 @@ import { PageProgressComponent } from './pages/page-progress/page-progress.compo
     PageButtonsComponent,
     PageAvatarsComponent,
     PageProgressComponent,
+    PageSpinnersComponent,
+    PageAccordiansComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FeatherIconsModule
+    SharedModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

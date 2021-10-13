@@ -4,7 +4,7 @@
 </header>
 
 <div class='mb-8'>
-  <h4>Avatar small 32px</h4>
+  <h4>Avatar small (32px)</h4>
   <div class='flex flex-wrap'>
     <div class='w-8 h-8 p-1 rounded-full bg-neutral-100 mr-6'>
       <i-feather name="user" class='text-neutral-500'></i-feather>
@@ -22,7 +22,7 @@
 </div>
 
 <div class='mb-8'>
-  <h4>Avatar middle 40px</h4>
+  <h4>Avatar middle (40px)</h4>
   <div class='flex flex-wrap'>
     <div class='w-10 h-10 p-2 rounded-full bg-neutral-100 mr-6'>
       <i-feather name="user" class='text-neutral-500'></i-feather>
@@ -39,37 +39,65 @@
   </div>
 </div>
 
+<div class='mb-8'>
+  <h4>Avatar big (56px)</h4>
+  <div class='flex flex-wrap'>
+    <div class='w-14 h-14 p-4 rounded-full bg-neutral-100 mr-6'>
+      <i-feather name="user" class='text-neutral-500'></i-feather>
+    </div>
+    <div class='w-14 h-14 p-4 rounded-full bg-neutral-500 mr-6'>
+      <i-feather name="user" class='text-neutral-100'></i-feather>
+    </div>
+    <div class='w-14 h-14 p-4 rounded-full bg-carblue-500 mr-6'>
+      <p class='text-white'>AK</p>
+    </div>
+    <div class='w-14 h-14 rounded-full object-cover overflow-hidden border-2 border-carblue-500'>
+      <img src='/assets/avatar-exemple1.jpg' alt=''>
+    </div>
+  </div>
+</div>
+
 <div>
   <h4>Avatar group</h4>
   <p>The avatar group displays several avatars in row stack.
     Stacked avatar groups can contain up to five avatars and should only be used with small sized avatars.
     Each avatar has a white border to avoid photo overlapping.</p>
-    <div class='flex relative my-16'>
-      <div class='w-8 h-8 rounded-full object-cover overflow-hidden border-2 border-white absolute left-0 z-30'>
-        <img src='/assets/avatar-exemple2.jpg' alt=''>
+    <div class='my-16 grid grid-cols-1 lg:grid-cols-2 gap-6'>
+      <div>
+        <p class='sm mb-6'>If there are less than 4 avatars in a row, display them one by one with certain overlapping.</p>
+        <div class='relative h-12'>
+          <div class='w-8 h-8 rounded-full object-cover overflow-hidden border-2 border-white absolute left-0 z-30'>
+            <img src='/assets/avatar-exemple2.jpg' alt=''>
+          </div>
+          <div class='w-8 h-8 rounded-full object-cover overflow-hidden border-2 border-white absolute left-6 z-20'>
+            <img src='/assets/avatar-exemple3.jpg' alt=''>
+          </div>
+          <div class='w-8 h-8 rounded-full object-cover overflow-hidden border-2 border-white absolute left-12 z-10'>
+            <img src='/assets/avatar-exemple4.jpg' alt=''>
+          </div>
+        </div>
       </div>
-      <div class='w-8 h-8 rounded-full object-cover overflow-hidden border-2 border-white absolute left-6 z-20'>
-        <img src='/assets/avatar-exemple3.jpg' alt=''>
-      </div>
-      <div class='w-8 h-8 rounded-full object-cover overflow-hidden border-2 border-white absolute left-12 z-10'>
-        <img src='/assets/avatar-exemple4.jpg' alt=''>
-      </div>
-    </div>
-    <div class='flex relative'>
-      <div class='w-8 h-8 rounded-full object-cover overflow-hidden border-2 border-white absolute left-0 z-50'>
-        <img src='/assets/avatar-exemple1.jpg' alt=''>
-      </div>
-      <div class='w-8 h-8 rounded-full object-cover overflow-hidden border-2 border-white absolute left-4 z-40'>
-        <img src='/assets/avatar-exemple2.jpg' alt=''>
-      </div>
-      <div class='w-8 h-8 rounded-full object-cover overflow-hidden border-2 border-white absolute left-8 z-30'>
-        <img src='/assets/avatar-exemple3.jpg' alt=''>
-      </div>
-      <div class='w-8 h-8 rounded-full object-cover overflow-hidden border-2 border-white absolute left-12 z-20'>
-        <img src='/assets/avatar-exemple4.jpg' alt=''>
-      </div>
-      <div class='w-8 h-8 p-1 rounded-full bg-neutral-100 absolute left-20 z-10'>
-        <p class='text-neutral-500 sm'>+16</p>
+      <div>
+        <p class='sm mb-6'>If there are more than 4 avatars in a row, display max 4 overlapping avatars, with a circle of numbers
+          showing the total avatar amount.
+        </p>
+        <div class='relative h-12'>
+          <div class='w-8 h-8 rounded-full object-cover overflow-hidden border-2 border-white absolute left-0 z-50'>
+            <img src='/assets/avatar-exemple1.jpg' alt=''>
+          </div>
+          <div class='w-8 h-8 rounded-full object-cover overflow-hidden border-2 border-white absolute left-4 z-40'>
+            <img src='/assets/avatar-exemple2.jpg' alt=''>
+          </div>
+          <div class='w-8 h-8 rounded-full object-cover overflow-hidden border-2 border-white absolute left-8 z-30'>
+            <img src='/assets/avatar-exemple3.jpg' alt=''>
+          </div>
+          <div class='w-8 h-8 rounded-full object-cover overflow-hidden border-2 border-white absolute left-12 z-20'>
+            <img src='/assets/avatar-exemple4.jpg' alt=''>
+          </div>
+          <div class='w-8 h-8 p-1 rounded-full bg-neutral-100 absolute left-20 z-10'>
+            <p class='text-neutral-500 sm'>+16</p>
+          </div>
+        </div>
       </div>
     </div>
 </div>

@@ -9,17 +9,21 @@ import { PageIntroComponent } from './pages/page-intro/page-intro.component'
 import { TypographyComponent } from './pages/typography/typography.component'
 import { PageAvatarsComponent } from './pages/page-avatars/page-avatars.component'
 import { PageProgressComponent } from './pages/page-progress/page-progress.component'
+import { PageSpinnersComponent } from './pages/page-spinners/page-spinners.component'
+import { PageAccordiansComponent } from './pages/page-accordians/page-accordians.component'
 
 const routes: Routes = [
   { path: 'uikit', component: PageIntroComponent },
   { path: 'colors', component: ColorsComponent },
   { path: 'typography', component: TypographyComponent },
-  { path:'icons', component: IconsComponent },
+  { path: 'icons', component: IconsComponent },
   { path: 'drop-shadow', component: DropShadowComponent },
-  { path:'avatars', component: PageAvatarsComponent },
+  { path: 'avatars', component: PageAvatarsComponent },
   { path: 'alerts', component: PageAlertsComponent },
+  { path: 'accordians', component: PageAccordiansComponent },
   { path: 'buttons', component: PageButtonsComponent },
   { path: 'progress', component: PageProgressComponent },
+  { path: 'spinners', component: PageSpinnersComponent },
   { path: '', redirectTo: 'uikit', pathMatch: 'full' },
   { path: '**', redirectTo: 'uikit' }
 ]
