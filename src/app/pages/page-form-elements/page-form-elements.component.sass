@@ -1,5 +1,15 @@
 .radio, .checkbox
   @apply cursor-pointer inline-flex items-center mb-2
+  &.disabled
+    @apply cursor-default text-coolgrey-300
+
+.radio:not(.disabled):hover
+  .radio-primary
+    @apply bg-carblue-500
+
+.checkbox:not(.disabled):hover
+  .checkbox-primary
+    @apply bg-carblue-500
 
 input[type='radio'], input[type='checkbox']
   @apply hidden
@@ -7,11 +17,16 @@ input[type='radio'], input[type='checkbox']
 .radio-primary
   padding: 1.5px
   @apply w-4 h-4 rounded-full border-2 border-carblue-500 mr-3
+  .disabled &
+    @apply border-coolgrey-300
+
 
 .checkbox-primary
   @apply w-5 h-5 rounded-sm border-2 border-carblue-500 mr-3
   &.checkbox-round
     @apply rounded-full
+  .disabled &
+    @apply border-coolgrey-300
 
 .radio-primary::after
   content: ''
@@ -26,7 +41,7 @@ input[type='radio'], input[type='checkbox']
 input[type='radio']:checked + .radio-primary::after
   transform: scale(1)
 
-.checkbox-primary::after
+.checkbox-primary:not(.disabled)::after
   content: '\2713'
   margin: -3px -3px 2px 1px
   color: #fff
