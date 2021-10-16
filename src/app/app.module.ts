@@ -15,6 +15,9 @@ import { PageAvatarsComponent } from './pages/page-avatars/page-avatars.componen
 import { PageProgressComponent } from './pages/page-progress/page-progress.component';
 import { PageSpinnersComponent } from './pages/page-spinners/page-spinners.component';
 import { PageAccordiansComponent } from './pages/page-accordians/page-accordians.component';
+import { PageTablesComponent } from './pages/page-tables/page-tables.component';
+import { PageVisualIndicatorsComponent } from './pages/page-visual-indicators/page-visual-indicators.component';
+import { PageFormElementsComponent } from './pages/page-form-elements/page-form-elements.component';
 
 @NgModule({
   declarations: [
@@ -30,6 +33,9 @@ import { PageAccordiansComponent } from './pages/page-accordians/page-accordians
     PageProgressComponent,
     PageSpinnersComponent,
     PageAccordiansComponent,
+    PageTablesComponent,
+    PageVisualIndicatorsComponent,
+    PageFormElementsComponent,
   ],
   imports: [
     BrowserModule,

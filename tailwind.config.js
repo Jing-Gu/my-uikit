@@ -1,7 +1,7 @@
 module.exports = {
   purge: {
-    enabled: true,
-    content: ['./src/**/*.{html,ts}']
+    // enabled: true,
+    // content: ['./src/**/*.{html,ts}']
   },
   darkMode: 'class',
   theme: {
@@ -40,6 +40,7 @@ module.exports = {
           900: 'var(--red-900)'
         },
         coolgrey: {
+          50: 'var(--coolgrey-50)',
           100: 'var(--coolgrey-100)',
           300: 'var(--coolgrey-300)',
           500: 'var(--coolgrey-500)',
@@ -47,6 +48,7 @@ module.exports = {
           900: 'var(--coolgrey-900)',
         },
         warmgrey: {
+          50: 'var(--warmgrey-50)',
           100: 'var(--warmgrey-100)',
           300: 'var(--warmgrey-300)',
           500: 'var(--warmgrey-500)',
@@ -54,6 +56,7 @@ module.exports = {
           900: 'var(--warmgrey-900)',
         },
         neutral : {
+          50: 'var(--neutral-50)',
           100: 'var(--neutral-100)',
           300: 'var(--neutral-300)',
           500: 'var(--neutral-500)',

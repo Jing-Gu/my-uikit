@@ -1,0 +1,21 @@
+<header class='border-l-8 border-carblue-500 text-carblue-500 -ml-4 p-4 mb-8'>
+  <h3 class='text-carblue-500'>Tables</h3>
+  <p class='text-carblue-700 dark:text-carblue-300'>To...</p>
+</header>
+
+<main>
+  <table class='text-xs border border-warmgrey-100'>
+    <tr class='bg-warmgrey-50'>
+      <ng-container *ngFor='let header of invoiceTable.headers'>
+        <th class='tag'>{{header}}</th>
+      </ng-container>
+    </tr>
+    <tbody>
+      <tr *ngFor='let user of invoiceTable.users'>
+        <ng-container *ngFor='let info of user'>
+          <td>{{info}}</td>
+        </ng-container>
+      </tr>
+    </tbody>
+  </table>
+</main>

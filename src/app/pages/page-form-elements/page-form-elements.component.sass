@@ -1,0 +1,41 @@
+.radio, .checkbox
+  @apply cursor-pointer inline-flex items-center mb-2
+
+input[type='radio'], input[type='checkbox']
+  @apply hidden
+
+.radio-primary
+  padding: 1.5px
+  @apply w-4 h-4 rounded-full border-2 border-carblue-500 mr-3
+
+.checkbox-primary
+  @apply w-5 h-5 rounded-sm border-2 border-carblue-500 mr-3
+  &.checkbox-round
+    @apply rounded-full
+
+.radio-primary::after
+  content: ''
+  width: 100%
+  height: 100%
+  display: block
+  background: var(--blue-500)
+  border-radius: 50px
+  transform: scale(0)
+  transition: transform 150ms ease-in
+
+input[type='radio']:checked + .radio-primary::after
+  transform: scale(1)
+
+.checkbox-primary::after
+  content: '\2713'
+  margin: -3px -3px 2px 1px
+  color: #fff
+  transform: scale(0.9)
+  display: none
+
+input[type='checkbox']:checked + .checkbox-primary
+  background: var(--blue-500)
+  overflow: hidden
+
+input[type='checkbox']:checked + .checkbox-primary::after
+  display: block

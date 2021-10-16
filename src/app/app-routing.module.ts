@@ -11,6 +11,9 @@ import { PageAvatarsComponent } from './pages/page-avatars/page-avatars.componen
 import { PageProgressComponent } from './pages/page-progress/page-progress.component'
 import { PageSpinnersComponent } from './pages/page-spinners/page-spinners.component'
 import { PageAccordiansComponent } from './pages/page-accordians/page-accordians.component'
+import { PageTablesComponent } from './pages/page-tables/page-tables.component'
+import { PageVisualIndicatorsComponent } from './pages/page-visual-indicators/page-visual-indicators.component'
+import { PageFormElementsComponent } from './pages/page-form-elements/page-form-elements.component'
 
 const routes: Routes = [
   { path: 'uikit', component: PageIntroComponent },
@@ -24,6 +27,9 @@ const routes: Routes = [
   { path: 'buttons', component: PageButtonsComponent },
   { path: 'progress', component: PageProgressComponent },
   { path: 'spinners', component: PageSpinnersComponent },
+  { path: 'form-elements', component: PageFormElementsComponent },
+  { path: 'visual-indicators', component: PageVisualIndicatorsComponent },
+  { path: 'tables', component: PageTablesComponent },
   { path: '', redirectTo: 'uikit', pathMatch: 'full' },
   { path: '**', redirectTo: 'uikit' }
 ]
